@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 40%;
+  flex-direction: column;
+  padding: 30px;
+  color: white;
+}
+
+.form-input {
+  display: flex;
+}
+
+.success {
+  color: #1ac640;
+}
+
+.danger {
+  color: red;
+}
