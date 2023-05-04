@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container dark-mode">
+      <div class="row col-md-12">
+        <div id="textError"></div>
+        <div class="col-md-12" style="padding: 10px">
+          <h3 style="margin-top: 0px">Поиск кириллицы в латинице</h3>
+          <a
+            data-toggle="collapse"
+            href="#desc"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Описание
+          </a>
+          <div class="collapse" id="desc">
+            <small
+              >Очень часто встречается ситуация когда в нике персонажа
+              присутствуют символы разного алфавита. Некоторые символы
+              латинского алфавита визуально не отличить от кириллицы. Например
+              символы А, С, Р, Е и т.д. Иногда это делается умышленно, например,
+              чтобы выдать себя за другого. Часто это приводит к неприятным
+              проблемам. <br />Порой нам нужно проверить ник, чтобы узнать с кем
+              мы имеем дело. <br />Мы сами иногда ошибаемся и вводим символы с
+              другой раскладки, и не можем залогинится на сайте или сообщить
+              свой ник в игре. Этот инструмент поможет вам в поиске такой
+              проблемы.</small
+            >
+          </div>
+          <h3 class="text-title">Резултат поиска символов выделит их:</h3>
+          <p class="text-muted">
+            <span
+              class="circle circle-danger"
+              title="Буквы кириллического алфавита"
+            ></span
+            ><em> кириллица</em>
+          </p>
+          <p class="text-muted">
+            <span
+              class="circle circle-info"
+              title="Буквы латинского алфавита и прочие"
+            ></span
+            ><em> латиница</em>
+          </p>
+        </div>
+      </div>
+      <!-- /.invite_title -->
+
+      <div class="row col-md-12 dark-mode">
+        <div class="z-shadows col-md-12">
+          <legend class="text-success" style="font-size: 24px">Текст</legend>
+          <div style="wight: 100%">
+            <textarea
+              class="form-control"
+              name="text"
+              id="text"
+              placeholder="Введите текст"
+              rows="3"
+            ></textarea>
+          </div>
+          <div style="clear: both; margin-bottom: 15px"></div>
+          <div class="right_form_bottom_btn">
+            <button
+              class="btn btn-default-yellow"
+              id="btn_find_chars"
+              name="btn_find_chars"
+            >
+              Найти символы
+            </button>
+          </div>
+          <div style="clear: both"></div>
+          <div style="clear: both; margin-bottom: 50px"></div>
+          <div id="result"></div>
+        </div>
+      </div>
+      <!-- /content page -->
+      <div style="clear: both"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
